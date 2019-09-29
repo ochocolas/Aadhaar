@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="" title="">
+    <siteMapNode url="" title="Catalogs">
+      <siteMapNode url="~/Forms/xWebForms/Catalogs/xWebCountryZone.ascx" title="Country Zone" />
+      <siteMapNode url="~/Forms/xWebForms/Catalogs/xWebEnroller.ascx" title="Enroller" />
+      <siteMapNode url="~/Forms/xWebForms/Catalogs/xWebGender.ascx" title="Gender" />
+      <siteMapNode url="~/Forms/xWebForms/Catalogs/xWebLanguage.ascx" title="Language" />
+      <siteMapNode url="~/Forms/xWebForms/Catalogs/xWebPerson.ascx" title="Person" />
+      <siteMapNode url="~/Forms/xWebForms/Catalogs/xWebReligion.ascx" title="Religion" />
+      <siteMapNode url="~/Forms/xWebForms/Catalogs/xWebState.ascx" title="State" />
+    </siteMapNode>
+    <siteMapNode url="" title="Reports" >
+      <siteMapNode url="~/Forms/xWebForms/Reports/xWebReport.ascx" title="Overview" />
+    <siteMapNode url="~/Forms/xWebForms/Reports/xWebDesigner.ascx" title="Designer" />
+    <!--<siteMapNode url="~/Forms/xWebForms/Reports/xWebPivot.ascx" title="Pivot" />-->
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

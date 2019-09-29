@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Demographic" />
+  <DataSources>
+    <SqlDataSource ComponentName="DataSource1">
+      <Name>People</Name>
+      <Connection Name="AadhaarContext" FromAppConfig="true" />
+      <Query Type="SelectQuery" Name="vwPopulation">
+        <Tables>
+          <Table Name="vwPopulation" />
+        </Tables>
+        <Columns>
+          <Column Table="vwPopulation" Name="Id" />
+          <Column Table="vwPopulation" Name="FirstName" />
+          <Column Table="vwPopulation" Name="LastName" />
+          <Column Table="vwPopulation" Name="MiddleName" />
+          <Column Table="vwPopulation" Name="BirthDate" />
+          <Column Table="vwPopulation" Name="Age" />
+          <Column Table="vwPopulation" Name="IsDesceased" />
+          <Column Table="vwPopulation" Name="IsDuplicated" />
+          <Column Table="vwPopulation" Name="CreatedDate" />
+          <Column Table="vwPopulation" Name="CreatedBy" />
+          <Column Table="vwPopulation" Name="ModifyDate" />
+          <Column Table="vwPopulation" Name="ModifyBy" />
+          <Column Table="vwPopulation" Name="CorrectionIndex" />
+          <Column Table="vwPopulation" Name="IsHandicapped" />
+          <Column Table="vwPopulation" Name="StateName" />
+          <Column Table="vwPopulation" Name="Area" />
+          <Column Table="vwPopulation" Name="Latitud" />
+          <Column Table="vwPopulation" Name="Longitud" />
+          <Column Table="vwPopulation" Name="Population" />
+          <Column Table="vwPopulation" Name="CountryZoneName" />
+          <Column Table="vwPopulation" Name="GenderName" />
+          <Column Table="vwPopulation" Name="ReligionName" />
+          <Column Table="vwPopulation" Name="EnrollerName" />
+          <Column Table="vwPopulation" Name="EnrollerIsEnabled" />
+          <Column Table="vwPopulation" Name="LanguageName" />
+        </Columns>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+</Dashboard>

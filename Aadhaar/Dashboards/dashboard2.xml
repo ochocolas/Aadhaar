@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard>
+  <Title Text="Religion" />
+  <DataSources>
+    <SqlDataSource ComponentName="DataSource1">
+      <Name>People</Name>
+      <Connection Name="AadhaarContext" FromAppConfig="true" />
+      <Query Type="SelectQuery" Name="vwPopulation">
+        <Tables>
+          <Table Name="vwPopulation" />
+        </Tables>
+        <Columns>
+          <Column Table="vwPopulation" Name="Id" />
+          <Column Table="vwPopulation" Name="FirstName" />
+          <Column Table="vwPopulation" Name="LastName" />
+          <Column Table="vwPopulation" Name="MiddleName" />
+          <Column Table="vwPopulation" Name="BirthDate" />
+          <Column Table="vwPopulation" Name="Age" />
+          <Column Table="vwPopulation" Name="IsDesceased" />
+          <Column Table="vwPopulation" Name="IsDuplicated" />
+          <Column Table="vwPopulation" Name="CreatedDate" />
+          <Column Table="vwPopulation" Name="CreatedBy" />
+          <Column Table="vwPopulation" Name="ModifyDate" />
+          <Column Table="vwPopulation" Name="ModifyBy" />
+          <Column Table="vwPopulation" Name="CorrectionIndex" />
+          <Column Table="vwPopulation" Name="IsHandicapped" />
+          <Column Table="vwPopulation" Name="StateName" />
+          <Column Table="vwPopulation" Name="Area" />
+          <Column Table="vwPopulation" Name="Latitud" />
+          <Column Table="vwPopulation" Name="Longitud" />
+          <Column Table="vwPopulation" Name="Population" />
+          <Column Table="vwPopulation" Name="CountryZoneName" />
+          <Column Table="vwPopulation" Name="GenderName" />
+          <Column Table="vwPopulation" Name="ReligionName" />
+          <Column Table="vwPopulation" Name="EnrollerName" />
+          <Column Table="vwPopulation" Name="EnrollerIsEnabled" />
+          <Column Table="vwPopulation" Name="LanguageName" />
+        </Columns>
+      </Query>
+      <ConnectionOptions CloseConnection="true" />
+    </SqlDataSource>
+  </DataSources>
+  <Items>
+    <Treemap ComponentName="treemapDashboardItem1" Name="Religion count" DataSource="DataSource1" DataMember="vwPopulation">
+      <DataItems>
+        <Measure DataMember="ReligionName" SummaryType="Count" DefaultId="DataItem0" />
+        <Dimension DataMember="ReligionName" DefaultId="DataItem1" />
+      </DataItems>
+      <Values>
+        <Value DefaultId="DataItem0" />
+      </Values>
+      <Arguments>
+        <Argument DefaultId="DataItem1" />
+      </Arguments>
+    </Treemap>
+    <Pie ComponentName="pieDashboardItem1" Name="Religion by gender" DataSource="DataSource1" DataMember="vwPopulation" PieType="Donut" ShowPieCaptions="false">
+      <DataItems>
+        <Measure DataMember="GenderName" SummaryType="Count" DefaultId="DataItem0" />
+        <Dimension DataMember="ReligionName" Name="Religion" DefaultId="DataItem1" />
+        <Dimension DataMember="GenderName" DefaultId="DataItem2" />
+        <Dimension DataMember="ReligionName" Name="Religion" DefaultId="DataItem3" />
+        <Dimension DataMember="GenderName" Name="Gender" DefaultId="DataItem4" />
+        <Measure DataMember="ReligionName" Name="Religion" SummaryType="Count" DefaultId="DataItem5" />
+        <Dimension DataMember="GenderName" DefaultId="DataItem6" />
+        <Measure DataMember="GenderName" SummaryType="Count" DefaultId="DataItem7" />
+        <Dimension DataMember="ReligionName" Name="Religion" DefaultId="DataItem8" />
+        <Dimension DataMember="GenderName" DefaultId="DataItem9" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension DefaultId="DataItem4" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument DefaultId="DataItem8" />
+        <Argument DefaultId="DataItem9" />
+      </Arguments>
+      <Values>
+        <Value DefaultId="DataItem7" />
+      </Values>
+    </Pie>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Weight="100">
+      <LayoutGroup Orientation="Vertical" Weight="100">
+        <LayoutItem DashboardItem="pieDashboardItem1" Weight="100" />
+        <LayoutItem DashboardItem="treemapDashboardItem1" Weight="100" />
+      </LayoutGroup>
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>

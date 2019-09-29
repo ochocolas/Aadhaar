@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Aadhaar", "Aadhaar\", "{B6F48317-771A-48BD-96FF-8F3DFC752754}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{4db39726-406b-4818-acc2-f21bc7ba5736}|AadhaarFramework.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_50263"
+		Debug.AspNetCompiler.PhysicalPath = "Aadhaar\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50263\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_50263"
+		Release.AspNetCompiler.PhysicalPath = "Aadhaar\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_50263\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50263"
+		SlnRelativePath = "Aadhaar\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AadhaarFramework", "AadhaarFramework\AadhaarFramework.csproj", "{4DB39726-406B-4818-ACC2-F21BC7BA5736}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AadhaarEnroller", "AadhaarEnroller\AadhaarEnroller.csproj", "{6E8D2EA4-9E2B-4864-BDD9-57349BAA3E15}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AadhaarService", "AadhaarService\", "{FCE86815-9BD8-4FEA-9908-A1B1FE45527F}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.1"
+		ProjectReferences = "{4db39726-406b-4818-acc2-f21bc7ba5736}|AadhaarFramework.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62554"
+		Debug.AspNetCompiler.PhysicalPath = "AadhaarService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62554\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62554"
+		Release.AspNetCompiler.PhysicalPath = "AadhaarService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62554\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "62554"
+		SlnRelativePath = "AadhaarService\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6F48317-771A-48BD-96FF-8F3DFC752754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F48317-771A-48BD-96FF-8F3DFC752754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6F48317-771A-48BD-96FF-8F3DFC752754}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6F48317-771A-48BD-96FF-8F3DFC752754}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{4DB39726-406B-4818-ACC2-F21BC7BA5736}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DB39726-406B-4818-ACC2-F21BC7BA5736}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DB39726-406B-4818-ACC2-F21BC7BA5736}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DB39726-406B-4818-ACC2-F21BC7BA5736}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E8D2EA4-9E2B-4864-BDD9-57349BAA3E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E8D2EA4-9E2B-4864-BDD9-57349BAA3E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E8D2EA4-9E2B-4864-BDD9-57349BAA3E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E8D2EA4-9E2B-4864-BDD9-57349BAA3E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCE86815-9BD8-4FEA-9908-A1B1FE45527F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE86815-9BD8-4FEA-9908-A1B1FE45527F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE86815-9BD8-4FEA-9908-A1B1FE45527F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE86815-9BD8-4FEA-9908-A1B1FE45527F}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {50BCF05F-B709-4A7F-8868-F201CAA5775E}
+	EndGlobalSection
+EndGlobal
